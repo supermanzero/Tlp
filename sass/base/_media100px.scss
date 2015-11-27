@@ -1,0 +1,11 @@
+$modulus : 1080 / ( 100 * 100 / 16 );
+$driveWidth : (240,320,360,375,384,412,414,480,540,600,640,720,768,800,1080,1280,1440,2160,1600);
+@media (max-width: 320px){
+	html{ font-size: 320 / $modulus * 1%; }
+}
+@each $i in $driveWidth {
+    @media (width:#{$i}px){html{font-size: $i/$modulus * 1%}}
+}
+@media (min-width: 640px){
+	html{ font-size: 640 / $modulus * 1%; }
+}

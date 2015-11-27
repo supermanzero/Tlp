@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" > 
+    <title>引导页面</title>
+    <style>
+    *{ margin: 0; padding: 0;}
+    /* body{ background-color: #333;} */
+    ul,li,body{margin: 0;padding: 0;}
+    body{padding: 10px;}
+    .list{ width: 320px; margin: 0 auto; line-height: 30px;margin-bottom: 20px;border: 1px solid #666;border-radius: 3px;}
+    .list a{ text-decoration: none; color: #666; display: block;}
+    .list li.hd{padding-left: 5px;font-size: 1.5;font-weight: 800;color: #efefef; border-bottom: 1px solid #666;background: #666;}
+    .list li{list-style: none;padding-left: 20px;}
+    .list li:hover{ background: #aaa;}
+    .list li:hover a{ color: #333;}
+    
+    .guide{overflow: hidden;padding-bottom: 10px;}
+    .guide .hd{float: none;margin: 0;margin-bottom: 10px;border-radius: 0px;}
+    .guide li{float: left;margin: 5px 10px;padding: 0;background: #ddd;border-radius: 3px;padding: 0 5px;}
+    .guide li a{color: #666;}
+    </style>
+</head>
+<body>
+    <ul class="list guide">
+        <li class="hd">引导模块</li>
+        <li><a href="#n1">b2b</a></li>
+    </ul>
+    <ul class="list" id="n1">
+        <li class="hd">b2b</li>
+        <li><a href="b2b/index.html">首页</a></li>
+    </ul>
+</body>
+</html>

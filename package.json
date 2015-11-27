@@ -1,0 +1,27 @@
+{
+  "name": "ipinweb",
+  "description": "A grunt plugin to help front engineer creating css sprite.",
+  "version": "0.0.8",
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "dependencies": {
+    "spritesmith": "~0.18.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-contrib-imagemin":"~0.4.1",
+    "grunt-contrib-watch":"~0.6.1",
+    "grunt-contrib-clean":"",
+    "grunt-contrib-copy":"",
+    "compass-importer":"",
+    "matchdep": "~0.1.1",
+    "grunt-rev":"",
+    "grunt-usemin":""
+  },
+  "readme":"**"
+}

@@ -1,0 +1,136 @@
+@import "compass";
+html,body{
+    font-family: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif;
+}
+html * {
+    outline: 0;
+    -ms-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+}
+body, th, td, p, ol, ul, li, dl, dt, dd, a, h1, h2, h3, h4, h5, h6, form, fieldset, input, legend, select, textarea {
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: normal;
+}
+input,img,fieldset{
+    border: none;
+}
+input,select,fieldset{
+    vertical-align: middle;
+    background-color: transparent;
+}
+ul,ol{
+    padding-left: 0;
+    list-style-type: none;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+i,cite,em,var,address,dfn{
+    font-style: normal;
+}
+a:link,a:hover,a:active,a:visited{
+    text-decoration: none;
+}
+input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+input:focus:-moz-placeholder,input:focus::-moz-placeholder{
+    color: transparent;
+}
+button,input[type=button],input[type=password],input[type=submit],input[type=text],textarea{
+    outline: none;
+    -webkit-appearance: none;
+}
+input:-ms-clear{
+    display: none;
+}
+/* clear IE10 X */
+input {
+    -webkit-user-modify: read-write-plaintext-only;
+}
+select{
+    overflow-x: hidden;
+}
+%clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    line-height: 0;
+    visibility: hidden;
+}
+.clearfix{
+    @extend %clearfix;
+}
+%elli {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+html,body{
+    min-width: 320px;
+    max-width:640px;
+    margin:0 auto;
+    font-family:'SimHei'
+}
+.classify{
+    padding-bottom: 1.2rem;
+}
+.specolor1{
+    color: #aaa;
+}
+.specolor2{
+    color: #4981f2;
+}
+.specolor3{
+    color: #828282;
+}
+.specolor4{
+    color: #ccc9c7;
+}
+.font20{
+    font-size: .2rem;
+}
+.mar-l12{
+    margin-left: .12rem;
+}
+.mar-t8{
+    margin-top: .08rem;
+}
+.padd-l30{
+    padding-left: .3rem!important;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+.hidden{
+    display: none;
+}
+body{
+    font-size: 0.12rem;
+}
+html,body{height: 100%;}
+.all-wrap{min-height: 100%; padding-top: .89rem; box-sizing:border-box;}
+.iframeBox{
+    position: fixed;
+    top: .88rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll;
+    iframe{width: 100%;height: 100%;}
+}
+.app-body .all-wrap{padding-top: 0;}
