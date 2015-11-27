@@ -1,10 +1,3 @@
-/*
- * grunt-css-sprite
- * https://github.com/laoshu133
- *
- * Licensed under the MIT license.
- */
-
 var path = require('path');
 var compass_importer = require('compass-importer');
 var fs = require('fs');
@@ -56,8 +49,6 @@ module.exports = function(grunt){
 	        tasks: ['sass']
 	      },
 	      options: {
-	        // Sets livereload to true for livereload to work 
-	        // (livereload is not covered in this article)
 	        livereload: true,
 	        spawn: false
 	      }
@@ -110,5 +101,11 @@ module.exports = function(grunt){
     });
 
 	// 声明别名
-	grunt.registerTask('default', ["clean","copy","rev",'useminPrepare','usemin']);
+	grunt.registerTask('default', [
+        "clean",
+        "copy",
+        "rev",
+        'useminPrepare',
+        'usemin'
+    ]);
 };

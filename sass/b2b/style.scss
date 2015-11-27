@@ -1,0 +1,223 @@
+$pagePadding:.35rem !default;
+@import "base/base";
+
+.btob-index{
+    background: #fff;
+    height: 100%;
+    header.header{
+        background: #da6110;
+        height: 1.3rem + .17rem;
+        h1{
+           font-style: italic; 
+           text-align: center;
+           color: #fff;
+           font-size: .6rem;
+        }
+        border-bottom:.17rem solid #efefef;
+    }
+
+    .logo-area{
+        @extend %no-padding;
+        @extend %use-padding;
+        display: block;
+        background: #fff;
+        height: 3.5rem;
+        border-top: 1px solid #d2d2d2;
+        img{
+            width: 2.7rem;
+            margin-top: .33rem;
+            margin-left: .05rem;
+
+        }
+        .text-area{
+            display: inline-block;
+            height: 1.5rem;
+            width: 6rem;
+            margin-left: .72rem;
+            margin-top: .8rem;
+            .line-1{
+                font-size: .32rem;
+                color: #333;
+                span{
+                    color: #ef6000;
+                    font-size: .84rem;
+                    margin-right: .25rem;
+                }
+            }
+            .line-2{
+                color: #333;
+                font-size: .32rem;
+                margin-left: .3rem;
+                span{
+                    font-size: .64rem;
+                    margin-right: .25rem;
+                }
+            }
+        }
+        .icon-gt{
+            font-size: .5rem;
+            color: #d5d5d5;
+            float: right;
+            margin-top: 1.5rem;
+        }
+    }
+
+    .index-tips{
+        @extend %no-padding;
+        @extend %use-padding;
+        position: relative;
+        height: 1.8rem;
+        line-height: 1.8rem;
+        background: #fff6e0;
+        border-bottom:.05rem solid #f1dcab;
+        img{
+            height: .14rem;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        span{
+            color: #bc7d4f;
+            font-size: .3rem;
+            font-weight: 600;
+            letter-spacing:0.03rem;
+        }
+        .status{
+            float: right;
+            font-size: .42rem;
+        }
+    }
+
+    .operating-warp{
+        @extend %no-padding;
+        overflow: hidden;
+        background: #efefef;
+        height: 3.7rem;
+        padding-top: .45rem;
+        border-bottom: 1px solid #cfcfcf;
+        .operating{
+            width: ( 2rem + .38rem ) * 6 - .38rem;
+            height: 2.8rem;
+            a{
+                display: block;
+                position: relative;
+                float: left;
+                text-align: center;
+                margin-right: .5rem;
+                font-size: .42rem;
+                width: 2rem;
+                height: 2rem;
+                color: #333;
+                div{
+                    position: relative;
+                    @include border-radius(50%);
+                    background: #fff;
+                    line-height: 2rem;
+                    width: 2rem;
+                    height: 2rem;
+                    border: 1px solid #cfcfcf;
+                    left: 50%;
+                    margin-left: -1rem;
+                    top:50%;
+                    margin-top: -1rem;
+                    @include transition(all 0.1s ease-out 0s);
+                }
+                p{
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    bottom: -.6rem;
+                }
+                span{
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    background: #ed650a;
+                    width: .6rem;
+                    height: .6rem;
+                    color: #fff;
+                    text-align: center;
+                    line-height: .6rem;
+                    @include border-radius(50%);
+                }
+                .iconfont{
+                    font-size: 1.28rem;
+                    color: #202020;
+                    @include transition(font-size 0.1s ease-out 0s);
+                }
+                &:active{
+                    div{
+                        width: 2.2rem;
+                        height: 2.2rem;
+                        line-height: 2.2rem;
+                        margin-left:-1.1rem;
+                        margin-top:-1.1rem;
+                    }
+                    .iconfont{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .time-line{
+        @extend %no-padding;
+        @extend %use-padding;
+        background: #fff;
+        overflow: hidden;
+        color: #666666;
+        padding-top: .45rem;
+        font-size: .3rem;
+        ul{
+            float: right;
+            width: 9.4rem;
+            position: relative;
+            .left-line{
+                position: absolute;
+                width: 1px;
+                top:.1rem; 
+                bottom: 0;
+                background: #bbb;
+            }
+            li{
+                position: relative;
+                margin-bottom: 1.2rem;
+                padding-left: .55rem;
+                font-size: .42rem;
+                i{
+                    position: absolute;
+                    display: block;
+                    width: .25rem;
+                    height: .25rem;
+                    @include border-radius(50%);
+                    border:1px solid #bbbbbb;
+                    background: #fff;
+                    left: -.13rem;
+                    top:.08rem;
+                }
+                div{overflow: hidden;}
+                .msg-content{
+                    float: left;
+                    width: 6.9rem;
+                    span{
+                        color: #da6110;
+                    }
+                }
+                a{
+                    float: right;
+                    color: #177fff;
+                    text-decoration: underline;
+                }
+                .time{
+                    font-size: .3rem;
+                    color: #666666;
+                    margin-top: .1rem;
+                }
+                &.last{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

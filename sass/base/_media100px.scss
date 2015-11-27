@@ -1,17 +1,11 @@
+$modulus : 1080 / ( 100 * 100 / 16 );
+$driveWidth : (240,320,360,375,384,412,414,480,540,600,640,720,768,800,1080,1280,1440,2160,1600);
 @media (max-width: 320px){
-	html{ font-size: 320/1.728 * 1%; }
+	html{ font-size: 320 / $modulus * 1%; }
 }
-$driveWidth:(240,320,480,540,640,720,1080,1440,2160,414,375);
 @each $i in $driveWidth {
-    @media (width:#{$i}px){html{font-size: $i/1.728 * 1%}}
+    @media (width:#{$i}px){html{font-size: $i/$modulus * 1%}}
 }
-/*
-    系数得出  100 / 16 = 6.25  这个是1rem 代表100px
-    我们表示的百分比所以要乘100
-    最后系数 1080 / 625 = 1.728
-    最后系数 640 / 625 = 1.024
-    最后系数 640 / 625 = 0.512
-*/
 @media (min-width: 640px){
-    html{ font-size: 640/1.728 * 1%; }
+	html{ font-size: 640 / $modulus * 1%; }
 }

@@ -35,3 +35,17 @@
         100% {  width:100%;  }
     }
 }
+.page-warp{ padding: 0 $pagePadding;}
+%no-padding{
+    margin-left:-$pagePadding;
+    margin-right:-$pagePadding;
+}
+%use-padding{
+    padding: 0 $pagePadding;
+}
+header.header{
+    background: #da6110;
+    height: 1.3rem;
+    @extend %no-padding;
+    line-height: 1.3rem;
+}
